@@ -1,5 +1,6 @@
 {
-  "name": "app",
+  "name": "rails-wms",
+  "version": "0.1.0",
   "private": "true",
   "dependencies": {
     "@hotwired/stimulus": "^3.0.1",
