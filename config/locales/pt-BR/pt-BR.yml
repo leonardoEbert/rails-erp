@@ -29,5 +29,17 @@
 # To learn more, please read the Rails Internationalization guide
 # available at https://guides.rubyonrails.org/i18n.html.
 
-en:
-  hello: "Hello world"
+pt-BR:
+  hello: "Olá mundo!"
+  views:
+    home:
+      header:
+        homepage: 'Home'
+        documentation: 'Documentação'
+        support: 'Suporte'
+        features: 'Funcionalidades'
+        pricing: 'Preços'
+      banner:
+        title: 'Rails WMS'
+        description: 'WMS(Warehouse Management System) construído utilizando Ruby on Rails e PostgreSQL.'
+        button: 'Entrar / Cadastrar'
