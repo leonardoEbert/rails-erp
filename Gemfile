@@ -56,8 +56,16 @@ gem 'bootsnap', require: false
 # Flexible authentication solution for Rails with Warden
 gem 'devise', '~> 4.8', '>= 4.8.1'
 
-# Very simple Roles library without any authorization enforcement supporting scope on resource objects (instance or class). Supports ActiveRecord and Mongoid ORMs.
+# Very simple Roles library without any authorization enforcement supporting scope on resource objects (instance or class).
+# Supports ActiveRecord and Mongoid ORMs.
 gem 'rolify', '~> 6.0'
+
+# Paranoia is a re-implementation of acts_as_paranoid for Rails 4, 5, 6, and 7, using much, much, much less code.
+# You would use either plugin / gem if you wished that when you called destroy on an
+# Active Record object that it didn't actually destroy it, but just "hid" the record.
+# Paranoia does this by setting a deleted_at field to the current time when you destroy a record,
+# and hides it by scoping all queries on your model to only include records which do not have a deleted_at field.
+gem 'paranoia', '~> 2.6'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -74,6 +82,9 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+
+  # When mail is sent from your application, Letter Opener will open a preview in the browser instead of sending.
+  gem 'letter_opener', '~> 1.7'
 end
 
 group :test do
