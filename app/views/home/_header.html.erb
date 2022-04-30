@@ -1,18 +1,18 @@
-<header class="site-header sticky-top py-1">
+<header class="bg-primary site-header sticky-top py-1">
   <nav class="container d-flex flex-column flex-md-row justify-content-between">
     <%= link_to root_path, { class: 'py-2' } do %>
       <i id="box-icon" class="bi bi-box"></i>
     <% end %>
-    <a class="py-2 d-none d-md-inline-block" href="#">
+    <a class="py-2 d-none d-md-inline-block" href="#docs">
       <%= t('views.home.header.documentation') %>
     </a>
-    <a class="py-2 d-none d-md-inline-block" href="#">
+    <a class="py-2 d-none d-md-inline-block" href="#support">
       <%= t('views.home.header.support') %>
     </a>
-    <a class="py-2 d-none d-md-inline-block" href="#">
+    <a class="py-2 d-none d-md-inline-block" href="#features">
       <%= t('views.home.header.features') %>
     </a>
-    <a class="py-2 d-none d-md-inline-block" href="#">
+    <a class="py-2 d-none d-md-inline-block" href="#pricing">
       <%= t('views.home.header.pricing') %>
     </a>
     <%#= render 'account_links' %>

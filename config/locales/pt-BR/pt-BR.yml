@@ -43,3 +43,20 @@ pt-BR:
         title: 'Rails WMS'
         description: 'WMS(Warehouse Management System) construído utilizando Ruby on Rails e PostgreSQL.'
         button: 'Entrar / Cadastrar'
+      documentation:
+        title: 'Documentação'
+        text: 'Confira a documentação completa!'
+      support:
+        title: 'Suporte'
+        text: 'Entre em contato com o nosso suporte!'
+      features:
+        title: 'Funcionalidades'
+        text: 'Confira todas as funcionalidades do sistema!'
+      pricing:
+        title: 'Preços'
+        text: 'Confira os planos e descubra a melhor forma de uso!'
+      footer:
+        documentation: 'Documentação'
+        support: 'Suporte'
+        features: 'Funcionalidades'
+        pricing: 'Preços'
