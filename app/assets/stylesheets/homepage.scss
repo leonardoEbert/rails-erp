@@ -8,16 +8,15 @@
  */
 
 .site-header {
-  background-color: rgba(0, 0, 0, .85);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
+  background-color: rgba(23, 35, 128, 0.85);
 }
 .site-header a {
-  color: #8e8e8e;
+  color: #fff;
   transition: color .15s ease-in-out;
+  text-decoration: none;
 }
 .site-header a:hover {
-  color: #fff;
+  color: #9f9e9e;
   text-decoration: none;
 }
 
@@ -67,4 +66,8 @@
   .flex-md-equal > * {
     flex: 1;
   }
+}
+
+.system-name-footer {
+  text-decoration: none !important;
 }

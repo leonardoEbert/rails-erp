@@ -1,0 +1,62 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t "hello"
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t("hello") %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   "true": "foo"
+#
+# To learn more, please read the Rails Internationalization guide
+# available at https://guides.rubyonrails.org/i18n.html.
+
+pt-BR:
+  hello: "Olá mundo!"
+  views:
+    home:
+      header:
+        homepage: 'Home'
+        documentation: 'Documentação'
+        support: 'Suporte'
+        features: 'Funcionalidades'
+        pricing: 'Preços'
+      banner:
+        title: 'Rails WMS'
+        description: 'WMS(Warehouse Management System) construído utilizando Ruby on Rails e PostgreSQL.'
+        button: 'Entrar / Cadastrar'
+      documentation:
+        title: 'Documentação'
+        text: 'Confira a documentação completa!'
+      support:
+        title: 'Suporte'
+        text: 'Entre em contato com o nosso suporte!'
+      features:
+        title: 'Funcionalidades'
+        text: 'Confira todas as funcionalidades do sistema!'
+      pricing:
+        title: 'Preços'
+        text: 'Confira os planos e descubra a melhor forma de uso!'
+      footer:
+        documentation: 'Documentação'
+        support: 'Suporte'
+        features: 'Funcionalidades'
+        pricing: 'Preços'
