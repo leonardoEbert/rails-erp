@@ -31,3 +31,32 @@
 
 en:
   hello: "Hello world"
+  views:
+    home:
+      header:
+        homepage: 'Home'
+        documentation: 'Docs'
+        support: 'Support'
+        features: 'Features'
+        pricing: 'Pricing'
+      banner:
+        title: 'Rails WMS'
+        description: 'WMS(Warehouse Management System) built with Ruby on Rails and PostgreSQL.'
+        button: 'Sign In / Sign Up'
+      documentation:
+        title: 'Docs'
+        text: 'Check out the full documentation.'
+      support:
+        title: 'Support'
+        text: 'Contact our support!'
+      features:
+        title: 'Features'
+        text: 'Check all system features!'
+      pricing:
+        title: 'Pricing'
+        text: 'Check out the plans and discover the best way to use them!'
+      footer:
+        documentation: 'Docs'
+        support: 'Support'
+        features: 'Features'
+        pricing: 'Pricing'

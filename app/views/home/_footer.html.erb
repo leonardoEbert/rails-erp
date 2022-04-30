@@ -1,0 +1,59 @@
+<footer class="container py-5">
+  <div class="row">
+    <div class="col-12 col-md">
+      <%= link_to root_path, { class: 'py-2' } do %>
+        <i id="box-icon" class="bi bi-box text-black"></i>
+      <% end %>
+      <span class="text-decoration-none text-black">Rails WMS</span>
+      <small class="d-block mb-3 text-muted">&copy; <%= Date.current.year %></small>
+    </div>
+    <div class="col-6 col-md">
+      <h5>
+        <%= t('views.home.footer.documentation') %>
+      </h5>
+      <ul class="list-unstyled text-small">
+        <li>
+          <a class="link-secondary" href="#docs">
+            <%= t('views.home.footer.documentation') %>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>
+        <%= t('views.home.footer.support') %>
+      </h5>
+      <ul class="list-unstyled text-small">
+        <li>
+          <a class="link-secondary" href="#support">
+            <%= t('views.home.footer.support') %>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>
+        <%= t('views.home.footer.features') %>
+      </h5>
+      <ul class="list-unstyled text-small">
+        <li>
+          <a class="link-secondary" href="#features">
+            <%= t('views.home.footer.features') %>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-6 col-md">
+      <h5>
+        <%= t('views.home.footer.pricing') %>
+      </h5>
+      <ul class="list-unstyled text-small">
+        <li>
+          <a class="link-secondary" href="#pricing">
+            <%= t('views.home.footer.pricing') %>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
