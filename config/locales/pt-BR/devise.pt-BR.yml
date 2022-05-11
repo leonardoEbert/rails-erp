@@ -33,6 +33,8 @@ pt-BR:
         other: Usuários
     devise:
       confirmations:
+        user:
+          confirmed: 'A sua conta foi confirmada com sucesso.'
         confirmed: A sua conta foi confirmada com sucesso.
         new:
           resend_confirmation_instructions: Reenviar instruções de confirmação
