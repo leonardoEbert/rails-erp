@@ -1,6 +1,10 @@
 <main class="form-signin">
-  <div class="container">
-    <h2><%= t('views.login.title') %></h2>
+  <div class="container h-100 align-middle m-auto">
+    <div class="row justify-content-center">
+      <div class="col-auto">
+        <h2><%= t('views.login.title') %></h2>
+      </div>
+    </div>
 
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
       <div class="row justify-content-center">
