@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  protect_from_forgery with: :exception
+
   before_action :set_user, only: %i[show edit update destroy]
   before_action :authenticate_user!
 
