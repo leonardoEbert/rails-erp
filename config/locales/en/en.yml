@@ -60,3 +60,12 @@ en:
         support: 'Support'
         features: 'Features'
         pricing: 'Pricing'
+    login:
+      title: 'Log In'
+  activerecord:
+    models:
+      user: 'User'
+    attributes:
+      user:
+        password: 'Password'
+        remember_me: 'Remember'
