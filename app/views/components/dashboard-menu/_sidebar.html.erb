@@ -1,18 +1,72 @@
 <div class="flex-shrink-0 h-100 p-3 bg-white" style="width: 280px;">
   <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
     <i class="bi bi-box me-2"></i>
-    <span class="fs-5 fw-semibold">Rails WMS</span>
+    <span class="fs-5 fw-semibold">Rails ERP</span>
   </a>
   <ul class="list-unstyled ps-0">
     <li class="mb-1">
-      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
-        Home
+      <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#product-collapse" aria-expanded="false">
+        Product
       </button>
-      <div class="collapse show" id="home-collapse">
+      <div class="collapse" id="product-collapse">
         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-          <li><a href="#" class="link-dark rounded">Overview</a></li>
-          <li><a href="#" class="link-dark rounded">Updates</a></li>
-          <li><a href="#" class="link-dark rounded">Reports</a></li>
+          <li class="ms-3">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#categorization-collapse" aria-expanded="false">
+              Categorization
+            </button>
+            <div class="collapse" id="categorization-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li>
+                  <a href="#" class="link-dark rounded">Main Category</a>
+                </li>
+                <li>
+                  <a href="#" class="link-dark rounded">Category</a>
+                </li>
+                <li>
+                  <a href="#" class="link-dark rounded">Subcategory</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="ms-3">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#variation-collapse" aria-expanded="false">
+              Variations
+            </button>
+            <div class="collapse" id="variation-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li class="ms-3">
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#option-variation-collapse" aria-expanded="false">
+                    Option
+                  </button>
+                  <div class="collapse" id="option-variation-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li>
+                        <a href="#" class="link-dark rounded">Option Groups</a>
+                      </li>
+                      <li>
+                        <a href="#" class="link-dark rounded">Options</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="ms-3">
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#option-item-variation-collapse" aria-expanded="false">
+                    Option Item
+                  </button>
+                  <div class="collapse" id="option-item-variation-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li>
+                        <a href="#" class="link-dark rounded">Option Item Groups</a>
+                      </li>
+                      <li>
+                        <a href="#" class="link-dark rounded">Option Items</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
         </ul>
       </div>
     </li>
