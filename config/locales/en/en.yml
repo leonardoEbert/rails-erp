@@ -60,6 +60,56 @@ en:
         support: 'Support'
         features: 'Features'
         pricing: 'Pricing'
+    sidebar:
+      product:
+        title: 'Products'
+        categorization:
+          title: 'Categorization'
+          main_category: 'Main Category'
+          category: 'Category'
+          subcategory: 'Subcategory'
+        variations:
+          title: 'Variations'
+          option:
+            title: 'Options'
+            option_groups: 'Option Groups'
+            options: 'Options'
+          option_item:
+            title: 'Option Item'
+            option_item_groups: 'Option Item Groups'
+            option_items: 'Option Items'
+        products:
+          title: 'Products'
+          product_options: 'Product Options'
+          product_option_items: 'Product Option Items'
+        inventory:
+          title: 'Inventory'
+          depot: 'Depot'
+          product_inventory: 'Product Inventory'
+      orders:
+        title: 'Orders'
+        all_orders: 'All Orders'
+        order_status: 'Order Status'
+        integrations: 'Integrations'
+      customers:
+        title: 'Customers'
+        all_customers: 'All Customers'
+        blocked: 'Blocked'
+        allowed: 'Allowed'
+        status: 'Status'
+      users:
+        title: 'Users'
+        permissions:
+          title: 'Permissions'
+          groups: 'Groups'
+          actions: 'Actions'
+        all_users: 'All Users'
+      account:
+        title: 'Account'
+        new: 'New'
+        profile: 'Profile'
+        settings: 'Settings'
+        sign_out: 'Sign Out'
     login:
       title: 'Log In'
   activerecord:

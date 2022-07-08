@@ -29,6 +29,56 @@ pt-BR:
         support: 'Suporte'
         features: 'Funcionalidades'
         pricing: 'Preços'
+    sidebar:
+      product:
+        title: 'Produto'
+        categorization:
+          title: 'Categorização'
+          main_category: 'Categoria Principal'
+          category: 'Categoria'
+          subcategory: 'Subcategoria'
+        variations:
+          title: 'Variações'
+          option:
+            title: 'Opção'
+            option_groups: 'Grupos de Opções'
+            options: 'Opções'
+          option_item:
+            title: 'Item de Opção'
+            option_item_groups: 'Grupos de Itens de Opções'
+            option_items: 'Itens de Opções'
+        products:
+          title: 'Produtos'
+          product_options: 'Opções de Produto'
+          product_option_items: 'Itens de Opções de Produto'
+        inventory:
+          title: 'Estoque'
+          depot: 'Depósito'
+          product_inventory: 'Estoque de Produto'
+      orders:
+        title: 'Pedidos'
+        all_orders: 'Todos os Pedidos'
+        order_status: 'Status de Pedido'
+        integrations: 'Integrações'
+      customers:
+        title: 'Clientes'
+        all_customers: 'Todos os Clientes'
+        blocked: 'Bloqueados'
+        allowed: 'Permitidos'
+        status: 'Status'
+      users:
+        title: 'Usuários'
+        permissions:
+          title: 'Permissões'
+          groups: 'Grupos'
+          actions: 'Ações'
+        all_users: 'Todos os Usuários'
+      account:
+        title: 'Conta'
+        new: 'Nova'
+        profile: 'Perfil'
+        settings: 'Configurações'
+        sign_out: 'Sair'
     login:
       title: 'Entrar'
   activerecord:

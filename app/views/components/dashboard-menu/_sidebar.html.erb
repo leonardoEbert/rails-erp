@@ -7,25 +7,31 @@
     <li class="mb-1">
       <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#product-collapse" aria-expanded="false">
         <i class="bi bi-display me-1"></i>
-        Product
+        <%= t('views.sidebar.product.title') %>
       </button>
       <div class="collapse" id="product-collapse">
         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
           <li class="ms-3">
             <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#categorization-collapse" aria-expanded="false">
               <i class="bi bi-bar-chart-steps me-1"></i>
-              Categorization
+              <%= t('views.sidebar.product.categorization.title') %>
             </button>
             <div class="collapse" id="categorization-collapse">
               <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                 <li>
-                  <a href="#" class="link-dark rounded">Main Category</a>
+                  <a href="#" class="link-dark rounded">
+                    <%= t('views.sidebar.product.categorization.main_category') %>
+                  </a>
                 </li>
                 <li>
-                  <a href="#" class="link-dark rounded">Category</a>
+                  <a href="#" class="link-dark rounded">
+                    <%= t('views.sidebar.product.categorization.category') %>
+                  </a>
                 </li>
                 <li>
-                  <a href="#" class="link-dark rounded">Subcategory</a>
+                  <a href="#" class="link-dark rounded">
+                    <%= t('views.sidebar.product.categorization.subcategory') %>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -33,22 +39,26 @@
           <li class="ms-3">
             <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#variation-collapse" aria-expanded="false">
               <i class="bi bi-stack me-1"></i>
-              Variations
+              <%= t('views.sidebar.product.variations.title') %>
             </button>
             <div class="collapse" id="variation-collapse">
               <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                 <li class="ms-3">
                   <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#option-variation-collapse" aria-expanded="false">
                     <i class="bi bi-back me-1"></i>
-                    Option
+                    <%= t('views.sidebar.product.variations.option.title') %>
                   </button>
                   <div class="collapse" id="option-variation-collapse">
                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                       <li>
-                        <a href="#" class="link-dark rounded">Option Groups</a>
+                        <a href="#" class="link-dark rounded">
+                          <%= t('views.sidebar.product.variations.option.option_groups') %>
+                        </a>
                       </li>
                       <li>
-                        <a href="#" class="link-dark rounded">Options</a>
+                        <a href="#" class="link-dark rounded">
+                          <%= t('views.sidebar.product.variations.option.title') %>
+                        </a>
                       </li>
                     </ul>
                   </div>
@@ -56,15 +66,19 @@
                 <li class="ms-3">
                   <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#option-item-variation-collapse" aria-expanded="false">
                     <i class="bi bi-front me-1"></i>
-                    Option Item
+                    <%= t('views.sidebar.product.variations.option_item.title') %>
                   </button>
                   <div class="collapse" id="option-item-variation-collapse">
                     <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                       <li>
-                        <a href="#" class="link-dark rounded">Option Item Groups</a>
+                        <a href="#" class="link-dark rounded">
+                          <%= t('views.sidebar.product.variations.option_item.option_item_groups') %>
+                        </a>
                       </li>
                       <li>
-                        <a href="#" class="link-dark rounded">Option Items</a>
+                        <a href="#" class="link-dark rounded">
+                          <%= t('views.sidebar.product.variations.option_item.option_items') %>
+                        </a>
                       </li>
                     </ul>
                   </div>
@@ -75,18 +89,24 @@
           <li class="ms-3">
             <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#products-collapse" aria-expanded="false">
               <i class="bi bi-box2-heart me-1"></i>
-              Products
+              <%= t('views.sidebar.product.products.title') %>
             </button>
             <div class="collapse" id="products-collapse">
               <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                 <li>
-                  <a href="#" class="link-dark rounded">Products</a>
+                  <a href="#" class="link-dark rounded">
+                    <%= t('views.sidebar.product.products.title') %>
+                  </a>
                 </li>
                 <li>
-                  <a href="#" class="link-dark rounded">Product Options</a>
+                  <a href="#" class="link-dark rounded">
+                    <%= t('views.sidebar.product.products.product_options') %>
+                  </a>
                 </li>
                 <li>
-                  <a href="#" class="link-dark rounded">Product Option Items</a>
+                  <a href="#" class="link-dark rounded">
+                    <%= t('views.sidebar.product.products.product_option_items') %>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -94,15 +114,19 @@
           <li class="ms-3">
             <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#inventory-collapse" aria-expanded="false">
               <i class="bi bi-boxes me-1"></i>
-              Inventory
+              <%= t('views.sidebar.product.inventory.title') %>
             </button>
             <div class="collapse" id="inventory-collapse">
               <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                 <li>
-                  <a href="#" class="link-dark rounded">Depot</a>
+                  <a href="#" class="link-dark rounded">
+                    <%= t('views.sidebar.product.inventory.depot') %>
+                  </a>
                 </li>
                 <li>
-                  <a href="#" class="link-dark rounded">Product Inventory</a>
+                  <a href="#" class="link-dark rounded">
+                    <%= t('views.sidebar.product.inventory.product_inventory') %>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -114,18 +138,24 @@
     <li class="mb-1">
       <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
         <i class="bi bi-cash-coin me-1"></i>
-        Orders
+        <%= t('views.sidebar.orders.title') %>
       </button>
       <div class="collapse" id="orders-collapse">
         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
           <li>
-            <a href="#" class="link-dark rounded">All Orders</a>
+            <a href="#" class="link-dark rounded">
+              <%= t('views.sidebar.orders.all_orders') %>
+            </a>
           </li>
           <li>
-            <a href="#" class="link-dark rounded">Order Status</a>
+            <a href="#" class="link-dark rounded">
+              <%= t('views.sidebar.orders.order_status') %>
+            </a>
           </li>
           <li>
-            <a href="#" class="link-dark rounded">Integrations</a>
+            <a href="#" class="link-dark rounded">
+              <%= t('views.sidebar.orders.integrations') %>
+            </a>
           </li>
         </ul>
       </div>
@@ -134,18 +164,24 @@
     <li class="mb-1">
       <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#customers-collapse" aria-expanded="false">
         <i class="bi bi-person-heart me-1"></i>
-        Customers
+        <%= t('views.sidebar.customers.title') %>
       </button>
       <div class="collapse" id="customers-collapse">
         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
           <li>
-            <a href="#" class="link-dark rounded">All Customers</a>
+            <a href="#" class="link-dark rounded">
+              <%= t('views.sidebar.customers.all_customers') %>
+            </a>
           </li>
           <li>
-            <a href="#" class="link-dark rounded">Blocked</a>
+            <a href="#" class="link-dark rounded">
+              <%= t('views.sidebar.customers.blocked') %>
+            </a>
           </li>
           <li>
-            <a href="#" class="link-dark rounded">Allowed</a>
+            <a href="#" class="link-dark rounded">
+              <%= t('views.sidebar.customers.allowed') %>
+            </a>
           </li>
           <li>
             <a href="#" class="link-dark rounded">Status</a>
@@ -157,27 +193,33 @@
     <li class="mb-1">
       <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#users-collapse" aria-expanded="false">
         <i class="bi bi-person-badge me-1"></i>
-        Users
+        <%= t('views.sidebar.users.title') %>
       </button>
       <div class="collapse" id="users-collapse">
         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
           <li class="ms-3">
             <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#permissions-collapse" aria-expanded="false">
               <i class="bi bi-fingerprint me-1"></i>
-              Permissions
+              <%= t('views.sidebar.users.permissions.title') %>
             </button>
             <div class="collapse" id="permissions-collapse">
               <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
                 <li>
-                  <a href="#" class="link-dark rounded">Groups</a>
+                  <a href="#" class="link-dark rounded">
+                    <%= t('views.sidebar.users.permissions.groups') %>
+                  </a>
                 </li>
                 <li>
-                  <a href="#" class="link-dark rounded">Actions</a>
+                  <a href="#" class="link-dark rounded">
+                    <%= t('views.sidebar.users.permissions.actions') %>
+                  </a>
                 </li>
               </ul>
             </div>
           </li>
-          <li><a href="#" class="link-dark rounded">All Users</a></li>
+          <li><a href="#" class="link-dark rounded">
+            <%= t('views.sidebar.users.all_users') %>
+          </a></li>
         </ul>
       </div>
     </li>
@@ -185,21 +227,29 @@
     <li class="mb-1">
       <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
         <i class="bi bi-person-circle me-1"></i>
-        Account
+        <%= t('views.sidebar.account.title') %>
       </button>
       <div class="collapse" id="account-collapse">
         <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
           <li>
-            <a href="#" class="link-dark rounded">New...</a>
+            <a href="#" class="link-dark rounded">
+              <%= t('views.sidebar.account.new') %>
+            </a>
           </li>
           <li>
-            <a href="#" class="link-dark rounded">Profile</a>
+            <a href="#" class="link-dark rounded">
+              <%= t('views.sidebar.account.profile') %>
+            </a>
           </li>
           <li>
-            <a href="#" class="link-dark rounded">Settings</a>
+            <a href="#" class="link-dark rounded">
+              <%= t('views.sidebar.account.settings') %>
+            </a>
           </li>
           <li>
-            <a href="#" class="link-dark rounded">Sign out</a>
+            <a href="#" class="link-dark rounded">
+              <%= t('views.sidebar.account.sign_out') %>
+            </a>
           </li>
         </ul>
       </div>
