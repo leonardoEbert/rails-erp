@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: wms_development
+  database: rails_erp_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: wms_test
+  database: rails_erp_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -81,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: wms_production
+  database: rails_erp_production
   username: wms
   password: <%= ENV["WMS_DATABASE_PASSWORD"] %>

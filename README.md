@@ -1,6 +1,6 @@
-# Rails WMS
+# Rails ERP
 
-This is a open source and free to use WMS(Warehouse Management System) distributed under MIT license.
+This is a open source and free to use ERP(Enterprise Resource Planning) distributed under MIT license.
 
 * Ruby version
   * `v3.1.2`
@@ -13,8 +13,8 @@ This is a open source and free to use WMS(Warehouse Management System) distribut
   * Devise
 
 * Configuration
-  * `git clone https://github.com/leonardoEbert/rails-wms.git`
-  * `cd rails-wms`
+  * `git clone https://github.com/leonardoEbert/rails-erp.git`
+  * `cd rails-erp`
   * `bundle install`
 
 * Database creation
