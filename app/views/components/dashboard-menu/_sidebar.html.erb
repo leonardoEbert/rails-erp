@@ -1,0 +1,258 @@
+<div class="flex-shrink-0 h-100 p-3 bg-white" style="width: 280px;">
+  <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+    <i class="bi bi-box me-2"></i>
+    <span class="fs-5 fw-semibold">Rails ERP</span>
+  </a>
+  <ul class="list-unstyled ps-0">
+    <li class="mb-1">
+      <button class="btn btn-toggle align-items-center rounded" data-bs-toggle="collapse" data-bs-target="#product-collapse" aria-expanded="false">
+        <i class="bi bi-display me-1"></i>
+        <%= t('views.sidebar.product.title') %>
+      </button>
+      <div class="collapse" id="product-collapse">
+        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+          <li class="ms-3">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#categorization-collapse" aria-expanded="false">
+              <i class="bi bi-bar-chart-steps me-1"></i>
+              <%= t('views.sidebar.product.categorization.title') %>
+            </button>
+            <div class="collapse" id="categorization-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li>
+                  <a href="#" class="link-dark rounded">
+                    <%= t('views.sidebar.product.categorization.main_category') %>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="link-dark rounded">
+                    <%= t('views.sidebar.product.categorization.category') %>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="link-dark rounded">
+                    <%= t('views.sidebar.product.categorization.subcategory') %>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="ms-3">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#variation-collapse" aria-expanded="false">
+              <i class="bi bi-stack me-1"></i>
+              <%= t('views.sidebar.product.variations.title') %>
+            </button>
+            <div class="collapse" id="variation-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li class="ms-3">
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#option-variation-collapse" aria-expanded="false">
+                    <i class="bi bi-back me-1"></i>
+                    <%= t('views.sidebar.product.variations.option.title') %>
+                  </button>
+                  <div class="collapse" id="option-variation-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li>
+                        <a href="#" class="link-dark rounded">
+                          <%= t('views.sidebar.product.variations.option.option_groups') %>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="link-dark rounded">
+                          <%= t('views.sidebar.product.variations.option.title') %>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="ms-3">
+                  <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#option-item-variation-collapse" aria-expanded="false">
+                    <i class="bi bi-front me-1"></i>
+                    <%= t('views.sidebar.product.variations.option_item.title') %>
+                  </button>
+                  <div class="collapse" id="option-item-variation-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                      <li>
+                        <a href="#" class="link-dark rounded">
+                          <%= t('views.sidebar.product.variations.option_item.option_item_groups') %>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" class="link-dark rounded">
+                          <%= t('views.sidebar.product.variations.option_item.option_items') %>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="ms-3">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#products-collapse" aria-expanded="false">
+              <i class="bi bi-box2-heart me-1"></i>
+              <%= t('views.sidebar.product.products.title') %>
+            </button>
+            <div class="collapse" id="products-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li>
+                  <a href="#" class="link-dark rounded">
+                    <%= t('views.sidebar.product.products.title') %>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="link-dark rounded">
+                    <%= t('views.sidebar.product.products.product_options') %>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="link-dark rounded">
+                    <%= t('views.sidebar.product.products.product_option_items') %>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="ms-3">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#inventory-collapse" aria-expanded="false">
+              <i class="bi bi-boxes me-1"></i>
+              <%= t('views.sidebar.product.inventory.title') %>
+            </button>
+            <div class="collapse" id="inventory-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li>
+                  <a href="#" class="link-dark rounded">
+                    <%= t('views.sidebar.product.inventory.depot') %>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="link-dark rounded">
+                    <%= t('views.sidebar.product.inventory.product_inventory') %>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="border-top my-3"></li>
+    <li class="mb-1">
+      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="false">
+        <i class="bi bi-cash-coin me-1"></i>
+        <%= t('views.sidebar.orders.title') %>
+      </button>
+      <div class="collapse" id="orders-collapse">
+        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+          <li>
+            <a href="#" class="link-dark rounded">
+              <%= t('views.sidebar.orders.all_orders') %>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="link-dark rounded">
+              <%= t('views.sidebar.orders.order_status') %>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="link-dark rounded">
+              <%= t('views.sidebar.orders.integrations') %>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="border-top my-3"></li>
+    <li class="mb-1">
+      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#customers-collapse" aria-expanded="false">
+        <i class="bi bi-person-heart me-1"></i>
+        <%= t('views.sidebar.customers.title') %>
+      </button>
+      <div class="collapse" id="customers-collapse">
+        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+          <li>
+            <a href="#" class="link-dark rounded">
+              <%= t('views.sidebar.customers.all_customers') %>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="link-dark rounded">
+              <%= t('views.sidebar.customers.blocked') %>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="link-dark rounded">
+              <%= t('views.sidebar.customers.allowed') %>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="link-dark rounded">Status</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="border-top my-3"></li>
+    <li class="mb-1">
+      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#users-collapse" aria-expanded="false">
+        <i class="bi bi-person-badge me-1"></i>
+        <%= t('views.sidebar.users.title') %>
+      </button>
+      <div class="collapse" id="users-collapse">
+        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+          <li class="ms-3">
+            <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#permissions-collapse" aria-expanded="false">
+              <i class="bi bi-fingerprint me-1"></i>
+              <%= t('views.sidebar.users.permissions.title') %>
+            </button>
+            <div class="collapse" id="permissions-collapse">
+              <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                <li>
+                  <a href="#" class="link-dark rounded">
+                    <%= t('views.sidebar.users.permissions.groups') %>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="link-dark rounded">
+                    <%= t('views.sidebar.users.permissions.actions') %>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#" class="link-dark rounded">
+            <%= t('views.sidebar.users.all_users') %>
+          </a></li>
+        </ul>
+      </div>
+    </li>
+    <li class="border-top my-3"></li>
+    <li class="mb-1">
+      <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+        <i class="bi bi-person-circle me-1"></i>
+        <%= t('views.sidebar.account.title') %>
+      </button>
+      <div class="collapse" id="account-collapse">
+        <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+          <li>
+            <a href="#" class="link-dark rounded">
+              <%= t('views.sidebar.account.new') %>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="link-dark rounded">
+              <%= t('views.sidebar.account.profile') %>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="link-dark rounded">
+              <%= t('views.sidebar.account.settings') %>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="link-dark rounded">
+              <%= t('views.sidebar.account.sign_out') %>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</div>
