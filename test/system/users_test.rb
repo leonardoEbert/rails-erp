@@ -14,7 +14,7 @@ class UsersTest < ApplicationSystemTestCase
     visit users_url
     click_on "New user"
 
-    fill_in "Birt date", with: @user.birt_date
+    fill_in "Birth date", with: @user.birth_date
     fill_in "Email", with: @user.email
     fill_in "First name", with: @user.first_name
     fill_in "Last name", with: @user.last_name
@@ -29,7 +29,7 @@ class UsersTest < ApplicationSystemTestCase
     visit user_url(@user)
     click_on "Edit this user", match: :first
 
-    fill_in "Birt date", with: @user.birt_date
+    fill_in "Birth date", with: @user.birth_date
     fill_in "Email", with: @user.email
     fill_in "First name", with: @user.first_name
     fill_in "Last name", with: @user.last_name

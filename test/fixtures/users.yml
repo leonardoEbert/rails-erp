@@ -3,13 +3,13 @@
 one:
   first_name: MyString
   last_name: MyString
-  birt_date: 2022-04-30
+  birth_date: 2022-04-30
   email: MyString
   password: MyString
 
 two:
   first_name: MyString
   last_name: MyString
-  birt_date: 2022-04-30
+  birth_date: 2022-04-30
   email: MyString
   password: MyString
