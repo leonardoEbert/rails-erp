@@ -217,9 +217,9 @@
               </ul>
             </div>
           </li>
-          <li><a href="#" class="link-dark rounded">
-            <%= t('views.sidebar.users.all_users') %>
-          </a></li>
+          <li>
+            <%= link_to t('views.sidebar.users.all_users'), users_path, class: 'link-dark rounded' %>
+          </li>
         </ul>
       </div>
     </li>
