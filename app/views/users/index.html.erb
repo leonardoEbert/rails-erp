@@ -1,14 +1,74 @@
-<p style="color: green"><%= notice %></p>
-
-<h1>Users</h1>
-
-<div id="users">
-  <% @users.each do |user| %>
-    <%= render user %>
-    <p>
-      <%= link_to "Show this user", user %>
-    </p>
-  <% end %>
+<div class="container-fluid pt-2">
+  <div class="row justify-content-center">
+    <div class="col-10">
+      <h1><%= t('views.user.title') %></h1>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-10 py-2">
+      <%= link_to t('views.user.actions.back'), dashboards_path, class: 'btn btn-outline-primary float-start' %>
+      <%= link_to t('views.user.actions.new'), new_user_path, class: 'btn btn-success float-end' %>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-10">
+      <table class="table table-hover align-middle table-striped">
+        <thead class="table-light">
+        <tr>
+          <th scope="col">
+            <%= t('views.user.table.headers.first_name') %>
+          </th>
+          <th scope="col">
+            <%= t('views.user.table.headers.last_name') %>
+          </th>
+          <th scope="col">
+            <%= t('views.user.table.headers.email') %>
+          </th>
+          <th scope="col">
+            <%= t('views.user.table.headers.birthdate') %>
+          </th>
+          <th scope="col">
+            <%= t('views.user.table.headers.active') %>
+          </th>
+          <th scope="col" style="text-align: center">
+            <%= t('views.user.table.headers.actions') %>
+          </th>
+        </tr>
+        </thead>
+        <tbody class="table-group-divider">
+        <% @users.each do |user| %>
+          <tr>
+            <td>
+              <%= user.first_name %>
+            </td>
+            <td>
+              <%= user.last_name %>
+            </td>
+            <td>
+              <%= user.email %>
+            </td>
+            <td>
+              <%= user.birth_date %>
+            </td>
+            <td>
+              <div class="form-check">
+                <%= check_box_tag 'user_active', 'active', user.active, options = {:disabled => true, class: 'form-check-input'} %>
+              </div>
+            </td>
+            <td>
+              <div class="row justify-content-center">
+                <div class="col-auto">
+                  <%= link_to t('views.user.actions.edit'), edit_user_path(user), class: 'btn btn-primary' %>
+                </div>
+                <div class="col-auto">
+                  <%= button_to t('views.user.actions.delete'), user, method: :delete, class: 'btn btn-danger', form: {data: {turbo_confirm: 'Are you sure?'}} %>
+                </div>
+              </div>
+            </td>
+          </tr>
+        <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
 </div>
-
-<%= link_to "New user", new_user_path %>
