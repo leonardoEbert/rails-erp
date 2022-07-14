@@ -79,6 +79,8 @@ pt-BR:
         profile: 'Perfil'
         settings: 'Configurações'
         sign_out: 'Sair'
+    user:
+      title: 'Usuário'
     login:
       title: 'Entrar'
   activerecord:
