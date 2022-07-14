@@ -35,7 +35,6 @@ pt-BR:
       confirmations:
         user:
           confirmed: 'A sua conta foi confirmada com sucesso.'
-        confirmed: A sua conta foi confirmada com sucesso.
         new:
           resend_confirmation_instructions: Reenviar instruções de confirmação
         send_instructions: Dentro de minutos, você receberá um email com as instruções de confirmação da sua conta.

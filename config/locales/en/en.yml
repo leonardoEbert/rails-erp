@@ -112,6 +112,19 @@ en:
         sign_out: 'Sign Out'
     user:
       title: 'User'
+      actions:
+        back: 'Back'
+        new: 'New User'
+        edit: 'Edit'
+        delete: 'Delete'
+      table:
+        headers:
+          first_name: 'Name'
+          last_name: 'Last Name'
+          email: 'Email'
+          birthdate: 'Birth Date'
+          active: 'Active'
+          actions: 'Actions'
     login:
       title: 'Log In'
   activerecord:

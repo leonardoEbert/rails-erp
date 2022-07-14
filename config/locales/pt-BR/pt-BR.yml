@@ -81,6 +81,19 @@ pt-BR:
         sign_out: 'Sair'
     user:
       title: 'Usuário'
+      actions:
+        back: 'Voltar'
+        new: 'Novo Usuário'
+        edit: 'Editar'
+        delete: 'Excluir'
+      table:
+        headers:
+          first_name: 'Nome'
+          last_name: 'Sobrenome'
+          email: 'Email'
+          birthdate: 'Data de Nascimento'
+          active: 'Ativo'
+          actions: 'Ações'
     login:
       title: 'Entrar'
   activerecord:
